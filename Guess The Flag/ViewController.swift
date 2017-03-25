@@ -35,7 +35,8 @@ class ViewController: UIViewController {
         button3.layer.borderColor = UIColor.lightGray.cgColor
         
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
-        askQuestion()
+        
+        askQuestion(action: nil) // There's no UIAlertAction for this one
         
     }
     
@@ -68,8 +69,8 @@ class ViewController: UIViewController {
             score -= 1
         }
         
-        let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+        let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .alert) // Pops up a alert box
+        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion)) // Adds a button to the alert box
         present(ac, animated: true)
         
     }
