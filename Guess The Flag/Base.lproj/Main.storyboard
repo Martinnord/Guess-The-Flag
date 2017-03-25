@@ -42,11 +42,27 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l3X-jT-XFY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHB-if-Ibw">
+                                <rect key="frame" x="165" y="561" width="44.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highscore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2s-u3-6wn">
+                                <rect key="frame" x="148.5" y="516" width="78.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Z2s-u3-6wn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5pt-WB-6wI"/>
                             <constraint firstItem="Gex-kj-U2c" firstAttribute="centerX" secondItem="mzK-2G-V5g" secondAttribute="centerX" id="5t7-JZ-49R"/>
                             <constraint firstItem="Uaq-E8-bvp" firstAttribute="centerX" secondItem="Gex-kj-U2c" secondAttribute="centerX" id="CC8-jY-DpB"/>
+                            <constraint firstItem="RHB-if-Ibw" firstAttribute="centerX" secondItem="Z2s-u3-6wn" secondAttribute="centerX" id="IoI-yE-afi"/>
+                            <constraint firstItem="RHB-if-Ibw" firstAttribute="top" secondItem="Z2s-u3-6wn" secondAttribute="bottom" constant="24" id="JcR-8J-dlk"/>
+                            <constraint firstItem="Z2s-u3-6wn" firstAttribute="top" secondItem="Uaq-E8-bvp" secondAttribute="bottom" constant="28" id="SLI-Xx-VNR"/>
                             <constraint firstItem="mzK-2G-V5g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nhX-5Z-92d"/>
                             <constraint firstItem="Uaq-E8-bvp" firstAttribute="top" secondItem="Gex-kj-U2c" secondAttribute="bottom" constant="15" id="rTo-R5-aPt"/>
                             <constraint firstItem="mzK-2G-V5g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="sv4-vV-pla"/>
@@ -58,6 +74,8 @@
                         <outlet property="button1" destination="mzK-2G-V5g" id="O3u-iZ-76v"/>
                         <outlet property="button2" destination="Gex-kj-U2c" id="pov-6g-aGd"/>
                         <outlet property="button3" destination="Uaq-E8-bvp" id="a30-9H-ADP"/>
+                        <outlet property="highScoreLbl" destination="Z2s-u3-6wn" id="DS7-rb-zXu"/>
+                        <outlet property="scoreLbl" destination="RHB-if-Ibw" id="OpI-uN-B9e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
